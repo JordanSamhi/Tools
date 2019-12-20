@@ -34,7 +34,7 @@ do
     esac
 done
 
-echo "Autoconfiguration of IccTA"
+echo "Auto-configuration of IccTA"
 if [ -z "$USERNAME" ]
 then
     echo
@@ -104,3 +104,5 @@ echo "password=$PASSWORD" >> cc.properties
 echo "characterEncoding=ISO-8859-1" >> cc.properties
 echo "useUnicode=true" >> cc.properties
 print_info "cc.properties successully created."
+
+echo "Auto-configuration of IccTA successful"
