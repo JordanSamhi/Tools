@@ -31,17 +31,11 @@ APP_BASENAME_APK=$(basename $APP_PATH .apk)
 APP_BASENAME=$(basename $APP_PATH)
 DARE_RESULTS=dareResults
 RETARGETED_PATH=$DARE_RESULTS/retargeted
-PROTOBUF_PATH=results_protobuf_ic3
 PATH_LOGS=logs
 
 if [ ! -d $PATH_LOGS ]
 then
     mkdir $PATH_LOGS
-fi
-
-if [ ! -d $PROTOBUF_PATH ]
-then
-    mkdir $PROTOBUF_PATH
 fi
 
 print_info "Retargeting $APP_BASENAME"
