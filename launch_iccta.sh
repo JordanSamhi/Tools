@@ -48,7 +48,7 @@ print_info "Retargeting $APP_BASENAME"
 ./dare/dare -d ../$DARE_RESULTS ../$APP_BASENAME &> $PATH_LOGS/$APP_BASENAME-dare.txt
 
 print_info "Resolving ICC model"
-java -jar ic3.jar -input $RETARGETED_PATH/$APP_BASENAME_APK -apkormanifest $APP_BASENAME -cp $ANDROID_JAR -db cc.properties -protobuf $PROTOBUF_PATH &> $PATH_LOGS/$APP_BASENAME-ic3.txt
+java -jar ic3.jar -input $RETARGETED_PATH/$APP_BASENAME_APK -apkormanifest $APP_BASENAME -cp $ANDROID_JAR -db cc.properties &> $PATH_LOGS/$APP_BASENAME-ic3.txt
 
 print_info "Executing IccTA"
 java -jar iccta.jar $APP_BASENAME $ANDROID_JAR &> $PATH_LOGS/$APP_BASENAME-iccta.txt
